@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudarshan G - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo"><a href="#">Sudarshan G</a></div>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#todo" class="nav-link">To-Do</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-container hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">Hi, I'm <span class="highlight">Sudarshan</span></h1>
+        <p class="hero-subtitle">Computer Science Engineering Student</p>
+        <p class="hero-description">Passionate about AI, ML, and Full Stack Development. Building innovative projects to learn and grow.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-container">
+          <img src="profile.jpg" alt="Profile" class="profile-img">
+          <div class="image-backdrop"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container about-content">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-text">
+        <p>Motivated engineering student with strong interest in AI, ML, and Full Stack Development. Currently pursuing B.E. in Computer Science at JSSATEB.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Crop Recommendation System</h3><span class="project-tech">ML</span>
+          </div>
+          <p class="project-description">Machine learning model to recommend optimal crops based on soil and weather conditions.</p>
+          <div class="project-tags"><span class="tag">Python</span><span class="tag">Random Forest</span></div>
+        </div>
+        <div class="project-card">
+          <div class="project-header">
+            <h3>3D Organ Reconstruction</h3><span class="project-tech">CNN</span>
+          </div>
+          <p class="project-description">Developing 3D reconstruction pipeline for human organs using CNNs to aid diagnostics.</p>
+          <div class="project-tags"><span class="tag">Deep Learning</span><span class="tag">Medical Imaging</span></div>
+        </div>
+        <div class="project-card">
+          <div class="project-header">
+            <h3>IoT Home Automation</h3><span class="project-tech">IoT</span>
+          </div>
+          <p class="project-description">Mobile-based system using IoT and Blynk to control appliances remotely.</p>
+          <div class="project-tags"><span class="tag">IoT</span><span class="tag">Blynk</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- To-Do List -->
+  <section class="skills" id="todo">
+    <div class="container">
+      <h2 class="section-title">To-Do / Notes</h2>
+      <div class="skill-category">
+        <input type="text" id="taskInput" placeholder="Enter a task..." class="skill-tag">
+        <button class="btn btn-primary" onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Listing -->
+  <section class="projects" id="products">
+    <div class="container">
+      <h2 class="section-title">Product Listing</h2>
+      <div>
+        <label>Filter by Category:
+          <select id="filterCategory">
+            <option value="all">All</option>
+            <option value="tech">Tech</option>
+            <option value="books">Books</option>
+          </select>
+        </label>
+        <label>Sort by:
+          <select id="sortProducts">
+            <option value="name">Name</option>
+            <option value="price">Price</option>
+            <option value="rating">Rating</option>
+          </select>
+        </label>
+      </div>
+      <div id="productGrid" class="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="contact-content">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-details">
+        <div class="contact-item"><i class="fas fa-envelope"></i><div><h4>Email</h4><p><a href="mailto:sudarshan.76766@gmail.com">sudarshan.76766@gmail.com</a></p></div></div>
+        <div class="contact-item"><i class="fas fa-phone"></i><div><h4>Phone</h4><p>+91 7676625157</p></div></div>
+        <div class="contact-item"><i class="fab fa-github"></i><div><h4>Github</h4><p><a href="https://github.com/Sudarshan766-code">github.com/Sudarshan766-code</a></p></div></div>
+        <div class="contact-item"><i class="fab fa-linkedin"></i><div><h4>LinkedIn</h4><p><a href="https://www.linkedin.com/in/sudarshan-g-315314291">linkedin.com/in/sudarshan-g</a></p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content"><p>© 2025 Sudarshan G. All rights reserved.</p></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
